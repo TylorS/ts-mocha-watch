@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "description": "Run TSLint and Mocha test for changed files",
   "main": "index.js",
+  "bin": {
+    "ts-mocha-watch": "cli.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
