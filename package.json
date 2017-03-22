@@ -1,6 +1,6 @@
 {
   "name": "ts-mocha-watch",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Run TSLint and Mocha test for changed files",
   "main": "index.js",
   "bin": {
