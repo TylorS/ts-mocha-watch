@@ -10,6 +10,8 @@ var defaultTestPatterns = ['src/*.test.ts', 'src/**/*.test.ts']
 var defaultRequires = ['custom-typings/*.ts']
 
 exports.watch = function (rootPath, srcPatterns, testPatterns, requires) {
+  var srcPath = join(rootPath, 'src')
+
   srcPatterns = srcPatterns || defaultSrcPatterns
   testPatterns = testPatterns || defaultTestPatterns
   requires = requires || defaultRequires
@@ -21,8 +23,6 @@ exports.watch = function (rootPath, srcPatterns, testPatterns, requires) {
   require('ts-node/register')
   // load all custom typings files
   findFiles(requires).forEach(require);
-
-  var rootPath = join(__dirname, '..')
 
   var tslintConfig = loadConfigurationFromPath(join(rootPath, 'tslint.json'));
 
