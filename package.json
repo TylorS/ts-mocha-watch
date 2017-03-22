@@ -1,0 +1,32 @@
+{
+  "name": "ts-mocha-watch",
+  "version": "0.1.0",
+  "description": "Run TSLint and Mocha test for changed files",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TylorS/ts-mocha-watch.git"
+  },
+  "keywords": [
+    "typescript",
+    "tslint",
+    "mocha",
+    "watch"
+  ],
+  "author": "Tylor Steinberger <tlsteinberger167@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TylorS/ts-mocha-watch/issues"
+  },
+  "homepage": "https://github.com/TylorS/ts-mocha-watch#readme",
+  "dependencies": {
+    "glob-expand": "^0.2.1",
+    "mocha": "^3.2.0",
+    "ts-node": "^3.0.2",
+    "tslint": "^4.5.1",
+    "typescript": "^2.2.1"
+  }
+}
